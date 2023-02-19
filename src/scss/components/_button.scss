@@ -1,0 +1,43 @@
+@import '../variables';
+
+.button {
+  display: inline-block;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 599px;
+  background-color: $white;
+  border: $white;
+  cursor: pointer;
+  padding: 10px 16px;  
+  text-transform: uppercase;
+  color: $gray; 
+  font-weight: 600;
+  @media (max-width: $container-width-tablet) {
+    font-size: 16px;
+    padding: 14px;
+  }
+  @media (max-width: $container-width-mobile) {
+    padding: 11px;
+    font-size: 12px;
+    line-height: 18px;
+  }  
+}
+button:hover{
+  color: $orange;
+}
+.button_active {
+  color: $white;
+  background: $orange-gradient;
+}
+.button_active:hover {
+  color: $black;  
+}
+.button_booked {
+  color: #363636;
+  font-weight: 600;
+  border: 1px solid #BFC4C9;
+}
+.button_reserved {
+  color: #A7A7A7;
+  background: #F9F9FA;
+  border: 1px solid #BFC4C9;
+}

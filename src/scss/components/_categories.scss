@@ -1,0 +1,66 @@
+@import '../variables';
+
+.categories {
+  min-width: 279px;
+
+  &__all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 255px;
+
+    i {
+      font-size: 8px;
+    }
+  }  
+
+  .active,
+  .active_title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: $orange;
+  }
+
+  .title {
+    text-align: start;
+    width: 255px;
+    height: 36px;
+  }
+  .active_title{
+    height: 36px;
+    border-bottom: 1px solid $orange;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    a {
+      font-size: 16px;
+      padding: 16px 0 0 20px;
+      
+      button{
+        text-align: start;
+      }
+
+      span {
+        color: $gray;
+        font-size: 14px;
+      }
+    }
+  }
+  .categories__part {
+    display: block;
+    margin: 42px 0 0 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
