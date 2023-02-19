@@ -1,0 +1,39 @@
+@import '../variables';
+
+.footer {
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    height: 56px;
+    font-size: 16px;
+    border-top: 1px solid $gray-line;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      justify-content: center;
+      height: 104px;
+      font-size: 15px;
+      line-height: 20px;
+
+      .footer__title{
+        text-align: center;
+        width: 200px;
+        margin: 0 0 16px 0;
+      }
+    }
+
+    .footer__icon-social{
+      display: flex;
+      justify-content: space-between;
+      width: 168px;
+    }
+
+    i {
+      display: inline-block;
+      font-size: 24px;    
+    }
+  } 
+
+}
