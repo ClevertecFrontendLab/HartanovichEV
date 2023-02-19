@@ -18,7 +18,7 @@ export const BookPage = () => {
   const params = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [currentBook, setCurrentBook] = useState({});
-  const srcBook = `https://strapi.cleverland.by/api/0books/${params.id}`;
+  const srcBook = `https://strapi.cleverland.by/api/books/${params.id}`;
 
   useEffect(() => {
     window.scroll(0,0);
